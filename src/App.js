@@ -7,25 +7,26 @@ export default function App() {
             <Header/>
             <Card 
                 className='section bg-grey'
-                img='./logo48Gray.webp'
-                title="It's All About Us" 
-                description="Lasciate ogne speranza, voi ch'intrate"
+                //img='./logo48.webp'
+                title="About Us" 
+                description="Established in Kentucky for thousands of years. Ok, since 2014, but we can hope."
             />
 
             <Card 
                 className='section bg-grey'
-                img='./logo48Gray.webp' 
-                title='Our Lack of Values'
-                description='We have no values, but we are high-functioning nihilists.'
+                //img='./logo48.webp' 
+                title='Our Values'
+                description='We remember when the earth was green.'
             />
 
             <Card 
                 className='section bg-grey'
-                img='./logo48Gray.webp'
-                title='Our Failed Mission' 
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.'
+                //img='./logo48.webp'
+                title='Our Mission' 
+                description='To collect, visualize, and disseminate information.'
             />
             <ContactContainer/>
+            <FooterContainer/>
         </div>
     );
 }
@@ -38,16 +39,15 @@ const Header = () =>{
             </span>
             <br/>
             <span className="header-text">
-                "We specialize in something ... we are just not sure what ..."
+                Blending nature and tech...
             </span>
+            <span className="header-right">
+                <a href="https://jacks-creek.com">Home</a>
+                <a href="https://pwsamiam.github.io/landing_page/">About</a>
+            </span>                      
         </div>
     );
 }
-
-
-
-
-
 
 
 const Card = (props) =>{
@@ -75,14 +75,14 @@ const Card = (props) =>{
 
 const ContactContainer = () => {
     return(
-        <div className='contact-container bg-grey'>
-            <span className="div-title">Contact us</span>
+        <div className='contact-container'>
+            <span className="div-title">Contact Us</span>
             <div className='contact-form'>
                 <div id='sect1'>
-                    <span>Contact us and we might get back to you within 24 hours or not at all. Depends on what you want.</span>
+                    <span>Contact us and we'll get back to you ASAP.</span>
                     <span>
                         <i className="fas fa-map-marker-alt"></i>
-                        The Dude Abides
+                        jacks-creek.com
                     </span>
                     <span>
                         <i className="fas fa-mobile-alt"></i>
@@ -96,23 +96,42 @@ const ContactContainer = () => {
                     
                 <div id='sect2'>
                     <span>
-                        Contact
+                           Contact adminvps@jacks-creek.com
                     </span>
 
-                    <input type="text" placeholder="email address" id="from" className="input-field"/>
-                    <textarea name="" id="email" cols="30" rows="10" placeholder="comment"></textarea>
+                    <input type="text" placeholder=" Your Email Address" id="from" className="input-field"/>
+                    <textarea name="" id="comment" cols="30" rows="10" placeholder=" Comment"></textarea>
                     <button className="contact-btn" onClick={() => {
                         var link = 'mailto:adminvps@jacks-creek.com?subject=Message from ' +document.getElementById('from').value +
-                                   '&body='+document.getElementById('email').value;
+                                   '&body='+document.getElementById('comment').value;
                         window.location.href = link;
                     } }>Send</button>                  
                 </div>
             </div>
         </div> 
         
-    );
-        
+    );     
 }
+
+
+const FooterContainer = () => {
+    return(
+  	     <div className='contact-container2'>
+		         <div className="column-footer" id="column-footer">      
+			           <div>
+				              <small>&copy; Jack's Creek Productions All Rights Reserved. <p>Design by: <a href="https://jacks-creek.com/">Jack's Creek Productions</a> | Banner image by: <a href="https://jacks-creek.com">jacks-creek.com</a></p></small>    
+	                 <small> <p>*Disclaimer: All opinions and commentary are solely that of www.jacks-creek.com</p></small>			                    
+                  <small> <p>Contact: <a href="mailto:adminvps@jacks-creek.com"> adminvps@jacks-creek.com</a></p></small>
+                  <p><a href="https://twitter.com"><input type="image" src={require('./images/twitterFooter.webp')} id="twitter" title="Twitter" alt="Twitter" /></a></p>
+              </div>   
+		        </div>
+        </div>	
+    );    
+
+}
+
+
+
 
 
 
