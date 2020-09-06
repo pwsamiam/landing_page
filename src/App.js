@@ -8,7 +8,7 @@ export default function App() {
             <Card 
                 className='section bg-grey'
                 img='./logo48Gray.webp'
-                title="About Us" 
+                title="It's All About Us" 
                 description="Lasciate ogne speranza, voi ch'intrate"
             />
 
