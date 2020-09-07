@@ -5,23 +5,23 @@
 }
 
  body {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+
+   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+     sans-serif; */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;  
+}
+
+.hero-image {
   background: url('./images/background.webp');
+  background-color: #cccccc;
+
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 30vh; 
-  width: 100%;
-  /* display: flex; */
-  align-items: center;
-  justify-content: center;
-  margin: 0px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-/*
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;  
-*/
+  position: relative;
 }
 
 
@@ -105,15 +105,17 @@
 #from {
   font-size: 14px;
   font-style: italic;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .section{ 
-  width: 120%;
+  width: 86.5%;
   text-align: center;
-  align-items: center; 
-  justify-content: center;
+    /* align-items: center; 
+  justify-content: center; */
   
+  margin-left: auto;
+  opacity: 0.7;
 }
 
 .section > div {
@@ -140,6 +142,9 @@
 .div-title {
   font-size: 30px;
   font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
 }
 
 .contact-container2,
@@ -158,9 +163,6 @@
   padding-bottom: 40px;  
 }
 
-.div-title{
-  text-align: center;
-}
 
 
 .contact-form{

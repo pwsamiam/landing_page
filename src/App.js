@@ -3,24 +3,25 @@ import "./styles.css";
 
 export default function App() {
   return(
-        <div id='body'>
-            <Header/>
+     <div>
+         <Header/> 
+         <div  className='hero-image'>   
             <Card 
-                className='section bg-grey'
+                className='section'
                 //img='./logo48Gray.webp'    
                 title="About Us" 
                 description="Established in Kentucky for thousands of years. Ok, since 2014, but we can hope."
             />
 
             <Card 
-                className='section bg-grey'
+                className='section'
                 //img='./logo48Gray.webp' 
                 title='Our Values'
                 description='We remember when the earth was green.'
             />
 
             <Card 
-                className='section bg-grey'
+                className='section'
                 //img='./logo48Gray.webp'
                 title='Our Mission' 
                 description='To collect, visualize, and disseminate information.'
@@ -28,7 +29,8 @@ export default function App() {
             <ContactContainer/>
             <FooterContainer/>
         </div>
-    );
+   </div>  
+  );
 }
 
 const Header = () =>{
