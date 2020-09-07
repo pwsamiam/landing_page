@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkerAlt,faMobileAlt,faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const ContactContainer = () => {
     return(
@@ -9,16 +10,13 @@ const ContactContainer = () => {
                 <div id='sect1'>
                     <span>Contact us and we'll get back to you ASAP.</span>
                     <span>
-                        <i className="fas fa-map-marker-alt"></i>
-                        jacks-creek.com
+                        <FontAwesomeIcon icon={faMapMarkerAlt} /> jacks-creek.com
                     </span>
                     <span>
-                        <FontAwesomeIcon icon={['fas', 'fa-mobile-alt']} />
-                        ‪(502) 233-1393‬
+                        <FontAwesomeIcon icon={faMobileAlt} /> (502) 233-1393‬
                     </span>
-                    <span>                     
-                        <FontAwesomeIcon icon={['far', 'fa-envelope']} />
-                        adminvps@jacks-creek.com
+                    <span> 
+                        <FontAwesomeIcon icon={faEnvelope} /> adminvps@jacks-creek.com
                     </span>
                 </div>
                     
