@@ -44,8 +44,17 @@
 }
 
 .header-text{
-  font-size: 16px;
+  font-size: 20px;
   font-style: italic;
+}
+
+#subtitle {
+ display: inline;
+ position: relative;
+ color: white; 
+ top: 15px;
+ padding-left: 15px;
+ font-weight: bold;
 }
 
 /* Style the header links */
@@ -69,8 +78,9 @@
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  background-color: #ced6cb;;
+  background-color: #ced6cb;
   color: green;
+  font-weight: bold;
 }
 
 /* Style the active/current link*/
@@ -81,11 +91,13 @@
 
 /* Float the link section to the right */
 .header-right a {
+  background-color: #dcdcdc;
   float: right;
   font-style: italic;
   padding: 10px;
-  color: #ffffff;
+  color: black;
   margin: 10px;
+  opacity: 0.55;
 }
 
 

@@ -7,21 +7,21 @@ export default function App() {
             <Header/>
             <Card 
                 className='section bg-grey'
-                //img='./logo48.webp'
+                //img='./logo48Gray.webp'    
                 title="About Us" 
                 description="Established in Kentucky for thousands of years. Ok, since 2014, but we can hope."
             />
 
             <Card 
                 className='section bg-grey'
-                //img='./logo48.webp' 
+                //img='./logo48Gray.webp' 
                 title='Our Values'
                 description='We remember when the earth was green.'
             />
 
             <Card 
                 className='section bg-grey'
-                //img='./logo48.webp'
+                //img='./logo48Gray.webp'
                 title='Our Mission' 
                 description='To collect, visualize, and disseminate information.'
             />
@@ -34,12 +34,13 @@ export default function App() {
 const Header = () =>{
     return(
         <div className='header' >
-            <span className='header-title'>
-                <i>Jack's Creek Productions</i>
+            <span className='header-title'>               
+                <i>Jack's Creek Productions</i> 
             </span>
             <br/>
             <span className="header-text">
-                Blending nature and tech...
+                <a href="https://reactjs.org/"> <input type="image" src={require('./images/logo48White.webp')}  id="logo" title="Made with React" alt="React" /></a>
+                <div id="subtitle">Blending nature and tech...</div>
             </span>
             <span className="header-right">
                 <a href="https://jacks-creek.com">Home</a>
