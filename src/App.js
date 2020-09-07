@@ -7,6 +7,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 
 import Header from "./components/Header.js";
 import ContactContainer from "./components/Contact.js";
+import Card from "./components/Card.js";
 import FooterContainer from "./components/Footer.js";
 
 import "./styles.css";
@@ -49,26 +50,7 @@ export default function App() {
 
 
 
-const Card = (props) =>{
-    return(
-        <div className={props.className} >
-            <div className="small-div">
-                <i className={props.className}></i>
-                <img src={props.img} alt=''/>
-            </div>
 
-            <div className="big-div">
-                <span className='div-title'>
-                    {props.title}
-                </span>
-                <br/>
-                <span>
-                    {props.description}
-                </span>
-            </div>
-        </div>
-    )
-}
 
 
 
