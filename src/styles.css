@@ -210,6 +210,12 @@
   background-color: #f4511e;
 }
 
+#twitter,
+#github {
+  padding: 5px;
+
+}
+
 @media only screen and (min-width:320px) and (max-width:725px){
   .contact-form{
     display: flex;
